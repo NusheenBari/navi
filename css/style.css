@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(0, 0, 0);
 }
 .container{
     height: 100vh;
@@ -17,7 +18,7 @@
     position: relative;
 }
 #logo{
-    width: 200px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -26,7 +27,7 @@
     font-weight: normal;
     margin-top: 24px;
     margin-bottom: 15px;
-    color: #232d60;
+    color: #ffffff;
     font-family: 'Merriweather', sans-serif ;
 }
 
@@ -35,7 +36,35 @@
     margin-top: 10%;
 }
 
-footer{
+.content p{
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.hero{
+    position: absolute;
+    width: 30%;
+    top: 0;
+    bottom: 100;
+    margin: 100px 600px;
+}
+
+@media only screen and (max-width: 768px){
+    .hero{
+        display: block;
+        position: inherit;
+        margin: 10px;
+        width: 100%;
+    }
+
+}
+
+footer p{
     text-align: center;
     margin-top: -30px;
+    color: #ffffff;
+    position: relative;
+    z-index: 5;
+    font-size: 12px;
+    letter-spacing: 0.3vh;
 }
